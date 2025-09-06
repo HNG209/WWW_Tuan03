@@ -9,6 +9,7 @@
 </h1>
 <br/>
 <a href="hello-servlet">Hello Servlet</a> <br>
-<a href="login.jsp">Tới trang đăng nhập</a>
+<a href="login.jsp">Tới trang đăng nhập(bài 1)</a> <br>
+<a href="user-registration.jsp">Tới trang đăng kí tài khoản người dùng(bài 2)</a>
 </body>
 </html>

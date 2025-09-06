@@ -1,4 +1,4 @@
-package com.example.lab03;
+package com.example.lab03.bai1;
 
 import com.example.lab03.model.Student;
 import jakarta.servlet.RequestDispatcher;

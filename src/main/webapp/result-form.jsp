@@ -15,7 +15,11 @@
         Student student = new Student();
         student = (Student) request.getAttribute("student");
 
-        out.println("Hello" + student);
+        out.println("First name:" + student.getFname() +
+         "<br/> Last name:" + student.getLname() +
+        "<br/> Email:" + student.getEmail() +
+        "<br/> Gender:" + student.getGender() +
+        "<br/> Birthday:" + student.getDob());
     %>
 </body>
 </html>
