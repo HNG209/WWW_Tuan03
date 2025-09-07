@@ -24,6 +24,14 @@ public class UserRegistration extends HttpServlet {
         String email = req.getParameter("email");
         String password = req.getParameter("password");
 
+        if(userDAO.checkExistedEmail(email)) {
+            req.setAttribute("errorMessage", "Email đã tồn tại");
+            req.setAttribute("fname", fname);
+            req.setAttribute("lname", lname);
+            req.setAttribute("email", email);
+            req.getRequestDispatcher("/user-registration.jsp").forward(req, resp);
+        }
+
         User user = new User();
         user.setLname(lname);
         user.setFname(fname);
